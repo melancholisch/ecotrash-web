@@ -6,7 +6,6 @@ import { Container } from './styles';
 
 const contlinks = props =>{
     return (
-       
         <Container display = {props.displayLinksHeader} >
             <NavLink to='/About' activeStyle={{color:'rgba(220,220,220)'}} >Quem somos</NavLink>
             <NavLink to='/News' activeStyle={{color:'rgba(220,220,220)'}} >Notícias</NavLink>

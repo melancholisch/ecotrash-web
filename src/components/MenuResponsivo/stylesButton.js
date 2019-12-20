@@ -8,12 +8,13 @@ export const ContainerButton = styled.button`
 
   @media (max-width:980px){
     display: block;
-    background-color: gray;
+    background-color: green;
     border: none;
-    margin: 25px;
+    margin: 10px;
     position: absolute;
     right: 0;
     padding: 20px;
+    top: 10px;
 
     img {
     width: 20px;
@@ -23,6 +24,7 @@ export const ContainerButton = styled.button`
     button{
       background-color: transparent;
       border: none;
+      
     }
     
   
