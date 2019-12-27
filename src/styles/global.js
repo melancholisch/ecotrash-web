@@ -12,6 +12,7 @@ export default createGlobalStyle`
     }
     body{
         -webkit-font-smoothing: antialiased !important;
+        font-family: 'Didact Gothic', sans-serif;
     }
     button {
         cursor: pointer;

@@ -1,36 +1,97 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import { LogopraDiferenciar } from './styles';
-import LinksHeader from './LinksHeader';
+import React, {Component} from 'react';
+import DesktopNavBar from './Desktop/DesktopNavBar';
+import MobileNavBar from './Mobile/MobileNavBar';
+import styled from 'styled-components';
 import Logo from '../../assets/tentativa1.png';
-import DrawerToggleButton from '../../components/MenuResponsivo/DrawerToggleButton';
-// import Sidedrawer from '../../components/MenuResponsivo/Sidedrawer';
-// import Routes from '../../routes';
 
 
-class Header extends Component{
+const MyNavBar = styled.div`
 
-    state ={
-        displayLinksHeader: true
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    overflow: hidden !important;
+    max-width: 100%;
+    margin-bottom:40px;
+    z-index: 5;
+
+    .logo{
+        width:100px;
+        position: absolute;
+        left: 40px;
+        top: 25px;  
+
+    }
+    @media (max-width:980px){
+        .logo{
+            width: 80px;
+            left: 20px;
+            top:25px;
+        }
+    }
+`
+
+
+class Header extends Component {
+
+    state = {
+        displayMobileNavBar: true
     }
 
-    toggleMobileButton = () => {
-        this.setState( prevState => {
-            return {displayLinksHeader: !prevState.displayLinksHeader}
+    toggleMobileNavBar = () => {
+        this.setState ( prevState => {
+            return { displayMobileNavBar: !prevState.displayMobileNavBar}
         })
     }
 
-    render(){
+    render (){
         return(
+            <MyNavBar>
+                <img src={Logo} alt='testelogo' className="logo" />
+                <DesktopNavBar toggleMobileNavBar = {this.toggleMobileNavBar} />
+                <MobileNavBar displayMobileNavBar = {this.state.displayMobileNavBar} />
+            </MyNavBar>
+        )
+
+    }
+}
+export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//import { NavLink } from 'react-router-dom';
+// import { LogopraDiferenciar } from './styles';
+// import LinksHeader from './LinksHeader';
+// import Logo from '../../assets/tentativa1.png';
+
+/*const header = props =>(
+        
             <>
-            <DrawerToggleButton toggleMobileButton = { this.toggleMobileButton } />
             <LogopraDiferenciar>
             <NavLink to='/' ><img src={Logo} alt="logo-site" /></NavLink> 
             </LogopraDiferenciar>
-            <LinksHeader displayLinksHeader = { this.state.displayLinksHeader } />     
+            <LinksHeader />     
         </>
-        )
-    }
-}
+);
 
-export default Header;
+export default header;
+
+*/
+
