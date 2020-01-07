@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import DesktopNavBar from './Desktop/DesktopNavBar';
 import MobileNavBar from './Mobile/MobileNavBar';
 import styled from 'styled-components';
-import Logo from '../../assets/tentativa1.png';
+import Logo from '../../assets/logoreformada.png';
 
 
 const MyNavBar = styled.div`

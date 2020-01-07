@@ -11,12 +11,12 @@ const footer = props =>(
             <div>
             <NavLink to='/About' >Facebook</NavLink>
             <NavLink to='/News' >Instagram</NavLink>
-            <NavLink to='/Passo' >Email</NavLink>
-            <NavLink to='/Pontos' >Telefone</NavLink>    
+            <NavLink to='/Passo' >ecotrashrio@gmail.com</NavLink>
+            <NavLink to='/Pontos' >+55 21 99936-6562 </NavLink>    
             </div>
             
             <Todos>
-                <p>© 2019 por e-coTrash <br />
+                <p>© 2019 por ecotrash <br />
                 Todos os direitos reservados</p>
             </Todos>  
                 
