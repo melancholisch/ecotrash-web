@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom';
 import DesktopNavBar from './Desktop/DesktopNavBar';
 import MobileNavBar from './Mobile/MobileNavBar';
 import styled from 'styled-components';
@@ -47,7 +48,7 @@ class Header extends Component {
     render (){
         return(
             <MyNavBar>
-                <img src={Logo} alt='testelogo' className="logo" />
+                <NavLink to='/' ><img src={Logo} alt='testelogo' className="logo" /></NavLink>
                 <DesktopNavBar toggleMobileNavBar = {this.toggleMobileNavBar} />
                 <MobileNavBar displayMobileNavBar = {this.state.displayMobileNavBar} />
             </MyNavBar>

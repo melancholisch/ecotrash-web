@@ -6,7 +6,7 @@ export const MyMobileNavBar = styled.nav`
     display:none;
     width: 250px;
     z-index: 6;
-    background-color: #fff;
+    background-color: #808080;
 
 @media (max-width:980px){
 
