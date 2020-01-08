@@ -11,6 +11,10 @@ export const ContainerPassos = styled.div`
 @media (max-width: 980px){
     .maiores{
         display: block;
+        
+    }
+    .menores{
+        width: 400px;
     }
 }
 
@@ -20,6 +24,13 @@ export const ContainerPassos = styled.div`
     text-align: center;
     margin: 0 auto;
     
+}
+
+.ilustracoes{
+    width: 200px;
+    height: 160px;
+    margin-bottom: 15px;
+
 }
 
 `
