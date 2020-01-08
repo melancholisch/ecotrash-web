@@ -29,6 +29,12 @@ export const Container = styled.nav`
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 980px){
+    div{
+      
+    }
+  }
 `
 
 export const Todos = styled.p`
