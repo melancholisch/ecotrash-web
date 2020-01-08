@@ -8,6 +8,7 @@ const footer = props =>(
     
         <Container>
             
+            
             <div>
             <NavLink to='/About' >Facebook</NavLink>
             <NavLink to='/News' >Instagram</NavLink>

@@ -3,6 +3,7 @@ import React from 'react';
 
 import Header from '../../components/Header/Header';
 import {ContainerTexto} from './styles';
+//import Fundo from '../../assets/fundoquemsomos.png'
 import Footer from '../../components/Footer/Footer';
 
 
@@ -11,14 +12,29 @@ export default function About() {
     <>
     <Header />
     <ContainerTexto>
-    <h1>PROPÓSITO</h1>
+    
+    
+    <div>
+    <div className="textos" >
+    <h4>O que fazemos?</h4>
     <p>
-    Da era digital emerge uma nova lógica que rege a forma como nos comunicamos, aprendemos, interagimos e nos 
-    potencializamos. Os jovens dessa era podem desafiar o sistema vigente e, conectados, programar novas soluções 
-    para os problemas do mundo. Impulsionar esse movimento é o nosso propósito.Por meio do empoderamento digital, 
-    queremos ampliar o horizonte de oportunidades para os jovens em situação de vulnerabilidade social. 
-    Alguns indicadores reforçam a urgência de nossa atuação:</p>
+    Facilitamos o descarte ecologicamente correto do lixo eletrônico de pessoas e empresas e incentivamos a 
+    transformação social por meio do engajamento socioambiental.</p>
+
+    <h4>Por que descartar?</h4>
+    <p>
+    Você contribui diretamente para a o descarte correto de insumos químicos e reaproveitamento componentes, 
+    ajudando a limpar o meio ambiente. Descartando conosco você consegue desconto com nosso parceiros e um certificado. </p>
+
+    <h4>Por que a ecotrash?</h4>
+    <p>
+    Os componentes eletrônicos são selecionados e encaminhados para conserto e remanufatura com os alunos da FIRJAN, 
+    auxiliando no aprendizado de jovens em vulnerabilidade social em tecnologia. </p>
+    
+    </div>
+    </div>
     </ContainerTexto>
+    
     <Footer />
     
     
