@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 import { Container, Todos} from './styles';
 
 //import Routes from '../../routes';
@@ -10,10 +10,10 @@ const footer = props =>(
             
             
             <div>
-            <NavLink to='/About' >Facebook</NavLink>
-            <NavLink to='/News' >Instagram</NavLink>
-            <NavLink to='/Passo' >ecotrashrio@gmail.com</NavLink>
-            <NavLink to='/Pontos' >+55 21 99936-6562 </NavLink>    
+            <a href='https://www.facebook.com/EcoTrash-102756437926770/' >Facebook</a>
+            <a href='https://instagram.com/ecotrashrio' >Instagram</a>
+            <a href='https://'>ecotrashrio@gmail.com</a>
+            <a href='https://'>+55 21 99936-6562 </a>    
             </div>
             
             <Todos>
