@@ -7,19 +7,16 @@ export const MyDesktopNavBar = styled.nav`
     flex-flow: row nowrap;
     align-items: center;
     position: relative;
-    padding: 25px;
-    top: 25px;
     margin-right: 40px;
- 
 
-
-  a {
+    a {
     text-decoration: none;
     color: #000;
-    padding: 15px;
+    margin-right: 45px;
     font-weight:bold;
     font-size: 15px;
-   
+    padding: 15px 25px ;   
+    transition: all 1s;
   }
 
   @media (max-width:980px){
@@ -29,7 +26,9 @@ export const MyDesktopNavBar = styled.nav`
   }
 
   a:hover{
-    color: rgba(220,220,220);
+    background-color: rgba(134,184, 27);
+    color: #fff;
+    border-radius: 15px;
   }
 
 `
@@ -42,10 +41,9 @@ export const MyMobileNavButton = styled.button`
   
 
 @media (max-width:980px){
-
-  width: 10px;
-  display: block;
-  
+  width: 5px;
+  margin-right:20px;
+  display: block;  
 }
 
 `
