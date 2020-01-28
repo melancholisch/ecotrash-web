@@ -13,21 +13,23 @@ const MyNavBar = styled.div`
     justify-content: flex-end;
     overflow: hidden !important;
     max-width: 100%;
-    margin-bottom:40px;
+    margin-bottom: 30px;
     z-index: 5;
+    height: 110px;
+    box-shadow: 0px 0px 5px 1px #86b81b;
+    
 
     .logo{
-        width:100px;
+        width: 100px;
         position: absolute;
-        left: 40px;
-        top: 25px;  
-
+        left: 40px;        
     }
+    
     @media (max-width:980px){
         .logo{
             width: 80px;
             left: 20px;
-            top:25px;
+            top:10px;
         }
     }
 `
@@ -77,7 +79,7 @@ export default Header;
 
 
 
-//import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 // import { LogopraDiferenciar } from './styles';
 // import LinksHeader from './LinksHeader';
 // import Logo from '../../assets/tentativa1.png';

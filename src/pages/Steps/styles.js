@@ -23,6 +23,11 @@ export const ContainerPassos = styled.div`
     padding: 40px;
     text-align: center;
     margin: 0 auto;
+    font-weight: bold;
+
+    p{
+        color: #86b81b;
+    }
     
 }
 
