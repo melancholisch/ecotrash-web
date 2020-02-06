@@ -13,6 +13,8 @@ export default createGlobalStyle`
     body{
         -webkit-font-smoothing: antialiased !important;
         font-family: 'Didact Gothic', sans-serif;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     button {
         cursor: pointer;
