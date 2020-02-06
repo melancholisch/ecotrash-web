@@ -29,5 +29,13 @@ export const ContainerTexto = styled.div`
         font-weight: bold;
         color: #86b81b;        
     }
-    
+    @media (max-width: 980px){
+        justify-content: center;
+        max-width: 100vw;
+        
+        .textos{
+            max-width: 80vw;
+            left:0;
+        }
+    }   
 `
