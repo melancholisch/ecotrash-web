@@ -10,7 +10,6 @@ export const Container = styled.div`
     max-width: 90vw;
     z-index:0;
     }
-
   }
     button{
       display: flex;
