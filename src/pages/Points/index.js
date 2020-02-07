@@ -11,7 +11,7 @@ export default function Points() {
   return (
     <>
     <Header />
-    <Geoloc />
+    <Geoloc/>
     <Footer />
     </>
   );
