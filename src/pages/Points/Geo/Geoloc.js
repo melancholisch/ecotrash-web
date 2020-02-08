@@ -1,115 +1,58 @@
-import React, { Component } from "react";
-import Dimensions from "react-dimensions";
-import { Container } from "./stylesGeoloc";
-import MapGL from "react-map-gl";
-import PropTypes from "prop-types";
-
-const TOKEN =
-  "pk.eyJ1IjoibWVsYW5jaG9saXNjaCIsImEiOiJjazUwNnVpdzMwajE1M29xazB6Njl6NnB1In0.kwi4Ppx64vVbkt956MbOvg";
-
-class Map extends Component {
-  static propTypes = {
-    containerWidth: PropTypes.number.isRequired,
-    containerHeight: PropTypes.number.isRequired
-  };
-
-  state = {
-    viewport: {
-      latitude:  -22.9035,
-      longitude: -43.2096,
-      zoom: 12.8,
-      bearing: 0,
-      pitch: 0
-    }
-  };
-  render() {
-    const { containerWidth: width, containerHeight: height } = this.props;
-    return (
-      <MapGL
-        width={width}
-        height={height}
-        {...this.state.viewport}
-        mapStyle="mapbox://styles/mapbox/light-v9"
-        mapboxApiAccessToken={TOKEN}
-        onViewportChange={viewport => this.setState({ viewport })}
-      />
-    );
-  }
-}
-
-const DimensionedMap = Dimensions()(Map);
-const App = () => (
-  <Container>
-    <DimensionedMap />
-  </Container>
-);
-
-export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
-import stylesGeoloc from './stylesGeoloc';
+import L from 'leaflet'
+//import { Icon } from 'leaflet';
+import { Container } from './stylesGeoloc';
 
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
+export default class Map extends Component {
+  constructor(){
+      super();
+      this.state = {
+          lng: -22.904732,
+          lat: -43.176408,
+          zoom: 12,
+      };
   };
 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div className="mapa" 
-            style={{ 
-                height: '70vh', 
-                width: '70%', 
-                margin: '0 auto' 
-                
-                }}>
+  componentDidMount(){
+    this.map = L.map('map').setView([this.state.lng, this.state.lat], this.state.zoom);
 
+    L.tileLayer('https://c.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(this.map);
 
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyBLeoPQDM449sDfdfG5jSsoz2q8AkwV8P8' }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-          defaultOptions={{style: stylesGeoloc}}
-        >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text="COLOCAR MARCADOR AQUI"
+  
+    // SABOR SAUDE CENTRO
+    L.marker([-22.904732, -43.176408]).addTo(this.map)
+        .bindPopup('<b style="color: green">Descarte seus equipamentos aqui!</b><br />Sabor Saúde<br/> Rua da Quitanda nº32, Centro - Rio de janeiro</p>');
+    // MUNDO VERDE BOTAFOGO
+    L.marker([-22.949193, -43.187831]).addTo(this.map)
+        .bindPopup('<b style="color: green">Descarte seus equipamentos aqui!</b><br />Mundo verde <br/> Rua São Clemente nº164, Botafogo - Rio de janeiro</p>');
+    // MUNDO VERDE ZN
+    L.marker([-22.884931, -43.284891]).addTo(this.map)
+        .bindPopup('<b style="color: green">Descarte seus equipamentos aqui!</b><br />Mundo verde <br/> Av Dom Helder Câmara nº5474, Piedade - Rio de janeiro</p>');
+  
 
-          />
-        </GoogleMapReact>
+  };
+
+  // POSIÇÃO DO USUARIO
+
+    displayLocation = () => {
+      navigator.geolocation.getCurrentPosition((position) => {
+        let longi = position.coords.longitude;
+        let lati = position.coords.latitude;
+        L.marker([lati, longi]).addTo(this.map)
+        .bindPopup('<b style="color: red">Você está aqui!</p>');
+    });
+  };
+
+render(){
+  
+  return(
+    <Container>
+      <div>
+          <button id="botaoLoc" onClick={this.displayLocation}>Onde estou?</button>
+          <div id="map"></div>
       </div>
-    );
-  }
-}
-
-export default SimpleMap;
-
-
-*/
+    </Container>
+  )};
+};
