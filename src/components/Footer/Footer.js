@@ -3,6 +3,8 @@ import instagram from '../../assets/instagram.png';
 import facebook from '../../assets/facebook.png';
 import email from '../../assets/email.png';
 import whatsapp from '../../assets/whatsapp.png';
+import iphone from '../../assets/app-store.png';
+import android from '../../assets/google-play.png';
 import { Container, Todos} from './styles';
 
 //import Routes from '../../routes';
@@ -10,6 +12,10 @@ import { Container, Todos} from './styles';
 const footer = props =>(
     
         <Container>
+            <div className="downloads" >
+            <a href='https://'><img src={iphone} alt='iphone' /></a>
+            <a href='https://'><img src={android} alt='android' /></a> 
+            </div>
             <div>
             <a href='https://www.facebook.com/EcoTrash-102756437926770/' ><img src={facebook} alt='facebook' /></a>
             <a href='https://instagram.com/ecotrashrio' ><img src={instagram} alt='instagram' /></a>

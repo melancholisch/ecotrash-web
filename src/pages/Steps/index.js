@@ -21,33 +21,33 @@ export default function Steps() {
 
         <div className="menores">
         <img src={ilu1} alt="separar lixo" className="ilustracoes" />
-        <p>1º PASSO<br/><br/>
-          SEPARAR SEU LIXO ELETRÔNICO DO LIXO DOMÉSTICO. CLIQUE AQUI E VEJA A LISTAGEM DE COMPONENTES QUE RECOLHEMOS.</p>
+        <p className="titulo-paragrafo">1º PASSO<br/><br/></p>
+        <p>SEPARAR SEU LIXO ELETRÔNICO DO LIXO DOMÉSTICO. CLIQUE AQUI E VEJA A LISTAGEM DE COMPONENTES QUE RECOLHEMOS.</p>
         </div>
 
         <div className="menores">
         <img src={ilu2} alt="descarte" className="ilustracoes" />
-        <p>2º PASSO<br/><br/>
-        ACESSAR A OPÇÃO DESCARTAR NA PÁGINA INICIAL DO APLICATIVO DISPONÍVEL PARA DOWNLOAD OU NA ABA PONTOS DE COLETA .</p>
+        <p className="titulo-paragrafo">2º PASSO<br/><br/></p>
+        <p>ACESSAR A OPÇÃO DESCARTAR NA PÁGINA INICIAL DO APLICATIVO DISPONÍVEL PARA DOWNLOAD OU NA ABA PONTOS DE COLETA .</p>
         </div>
 
         <div className="menores">
-        <img src={ilu3} alt="localizacao" className="ilustracoes" />
-        <p>3º PASSO<br/><br/>
-        ESCOLHER O PONTO DE COLETA MAIS PRÓXIMO DE ACORDO COM SUA LOCALIZAÇÃO.</p>
+        <img src={ilu3} alt="localizacao" className="ilustracoes" id="ilustracao-especial3" />
+        <p className="titulo-paragrafo">3º PASSO<br/><br/></p>
+        <p>ESCOLHER O PONTO DE COLETA MAIS PRÓXIMO DE ACORDO COM SUA LOCALIZAÇÃO.</p>
         </div>
 
         <div className="menores">
         <img src={ilu4} alt="qr code" className="ilustracoes" />
-        <p>4º PASSO<br/><br/>
-        AO DESCARTAR, POSICIONAR A CÂMERA DO SEU CELULAR PARA O QR CODE DA CAIXA 
+        <p className="titulo-paragrafo" >4º PASSO<br/><br/></p>
+        <p>AO DESCARTAR, POSICIONAR A CÂMERA DO SEU CELULAR PARA O QR CODE DA CAIXA 
         E SEGUIR AS ORIENTAÇÕES DO<br/> LINK DE REDIRECIONAMENTO.</p>
         </div>
 
         <div className="menores">
-        <img src={ilu5} alt="informacoes" className="ilustracoes" />
-        <p>5º PASSO<br/><br/>
-        DIGITE SEUS DADOS PESSOAIS E RETIRE SEU CERTIFICADO DE DESCARTE, ACUMULE 
+        <img src={ilu5} alt="informacoes" className="ilustracoes" id="ilustracao-especial5" />
+        <p className="titulo-paragrafo">5º PASSO<br/><br/></p>
+        <p>DIGITE SEUS DADOS PESSOAIS E RETIRE SEU CERTIFICADO DE DESCARTE, ACUMULE 
         PONTOS E TROQUE POR DESCONTOS COM NOSSOS PARCEIROS!</p>
         </div>
 

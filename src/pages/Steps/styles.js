@@ -26,6 +26,10 @@ export const ContainerPassos = styled.div`
     font-weight: bold;
 
     p{
+        color: #000;
+        margin-top: 20px;
+    }
+    .titulo-paragrafo{
         color: #86b81b;
     }
     
@@ -33,9 +37,16 @@ export const ContainerPassos = styled.div`
 
 .ilustracoes{
     width: 200px;
-    height: 160px;
+    height: 150px;
     margin-bottom: 15px;
 
+}
+#ilustracao-especial3{
+    width: 140px;
+}
+
+#ilustracao-especial5{
+    width: 210px;
 }
 
 `
