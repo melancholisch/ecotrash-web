@@ -20,6 +20,10 @@ export const Container = styled.nav`
     color: rgba(220,220,220);
   }
 
+.downloads img{
+  width: 150px;
+}
+
   img {
          
   }
