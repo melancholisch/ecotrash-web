@@ -2,6 +2,7 @@ import styled from 'styled-components';
 //import fundo from '../../assets/fundo2.jpg';
 import fundo from '../../assets/imagem-pessoas.jpg';
 
+
 export const ContainerTexto = styled.div`
     display: flex;
     justify-content: flex-start;

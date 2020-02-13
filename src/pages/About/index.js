@@ -12,8 +12,7 @@ export default function About() {
     <>
     <Header />
     <ContainerTexto>
-    
-    
+
     <div>
     <div className="textos" >
     <h4>O que fazemos?</h4>
