@@ -2,9 +2,10 @@ import React from 'react';
 
 import Header from '../../components/Header/Header';
 import {Container} from './styles';
+import mockup from '../../assets/app-foto.png';
 import Footer from '../../components/Footer/Footer';
 //import CarouselPage from './Slider/index';
-import mockup from '../../assets/app-foto.png';
+
 
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
     <Header />
     <Container>
       <div>
-        <div className="texto">
-            <h2>Nosso app</h2>
+        <div className="container-texto">
+            <div className="texto">
+            <h2>Nosso Aplicativo</h2>
 
             <p>Simples, moderno <br/>
             e com um sistema <br/>
@@ -23,9 +25,9 @@ export default function Home() {
             que você vai amar</p>
             
             <a href="/"><button>Baixar App</button></a>
-        </div>
-
-        <img scr={mockup} alt='mockup-iphone'/>
+            </div>
+            <img src={mockup} alt='mockup'/>
+        </div>       
       </div>
     </Container>
     <Footer />
