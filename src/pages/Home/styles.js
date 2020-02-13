@@ -1,7 +1,15 @@
 import styled from 'styled-components';
+import fundo from '../../assets/imagem-pessoas2.jpg';
 
-export const Title = styled.h1`
-    font-size: 24px;
-    color: #000;
+export const Container = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    background:url(${fundo});
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    
     
 `
