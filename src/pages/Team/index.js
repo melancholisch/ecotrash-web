@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../../components/Header/Header';
 import lucas from '../../assets/lucas.png'
+import mellyssa from '../../assets/mellyssa.png'
 import retang from '../../assets/retangle.png'
 import {ContainerTeam} from './styles';
 import Footer from '../../components/Footer/Footer';
@@ -26,7 +27,7 @@ export default function Team() {
       <img src={retang} className="retang" alt="retangulo"/>
         
         <div className="perfil" > 
-          <a href="https://linkedin.com/"> <img src={lucas} alt="foto-lucas"></img> </a>
+          <a href="https://github.com/melancholisch"> <img src={mellyssa} alt="foto-mellyssa"></img> </a>
           <h3>Mellyssa Monteiro</h3>
           <p>Desenvolvedora Front End</p>
         </div>

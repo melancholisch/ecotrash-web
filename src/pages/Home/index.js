@@ -7,7 +7,6 @@ import Footer from '../../components/Footer/Footer';
 //import CarouselPage from './Slider/index';
 
 
-
 export default function Home() {
   return (
     <>
