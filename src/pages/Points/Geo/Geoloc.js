@@ -3,6 +3,7 @@ import L from 'leaflet'
 //import { Icon } from 'leaflet';
 //import markerPontos '../../../assets/marker-ecotrash-teste1.png';
 //import markerUsuario '../../../assets/marker-ecotrash-sombra.png';
+// import leaf from '../../../assets/leaf-green.png'
 import { Container } from './stylesGeoloc';
 
 export default class Map extends Component {
@@ -30,7 +31,7 @@ export default class Map extends Component {
           iconSize: [38, 95],
           shadowSize: [50, 64],
           
-          popupAnchor: [-3, -76]
+          popupAnchor: [-3, -40]
           });
 
 
@@ -77,8 +78,9 @@ render(){
   return(
     <Container>
       <div>
-          <button id="botaoLoc" onClick={this.displayLocation}>Onde estou?</button>
-          <div id="map"></div>
+            <button id="botaoLoc" onClick={this.displayLocation}>Onde estou?</button>
+            
+            <div id="map"></div>
       </div>
     </Container>
   )};
