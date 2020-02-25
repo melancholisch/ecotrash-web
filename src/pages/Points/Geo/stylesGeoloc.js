@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
+    margin-top: 50px;
     #map { 
     height: 480px; 
     width: 90%; 

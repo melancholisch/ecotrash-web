@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ContainerTeam = styled.div`
-    margin: 0 auto;
+    
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     text-align: center;

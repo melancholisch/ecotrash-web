@@ -13,7 +13,6 @@ const MyNavBar = styled.div`
     justify-content: flex-end;
     overflow: hidden !important;
     max-width: 100%;
-    margin-bottom: 30px;
     z-index: 5;
     height: 110px;
     box-shadow: 0px 0px 5px 1px #86b81b;
