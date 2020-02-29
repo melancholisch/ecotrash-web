@@ -14,7 +14,6 @@ export const ContainerTeam = styled.div`
 
         @media(max-width:980px){
             flex-direction: column;
-            
         }    
     }
 
@@ -31,6 +30,7 @@ export const ContainerTeam = styled.div`
         display: none;
         }
     }
+    
     h4{
         font-weight: bold;
     }

@@ -11,7 +11,7 @@ const MyNavBar = styled.div`
     display:flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
     max-width: 100%;
     z-index: 5;
     height: 110px;
@@ -25,6 +25,7 @@ const MyNavBar = styled.div`
     }
     
     @media (max-width:980px){
+        overflow-x: hidden !important;
         .logo{
             width: 80px;
             left: 20px;

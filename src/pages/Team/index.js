@@ -3,6 +3,8 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import lucas from '../../assets/lucas.png'
 import mellyssa from '../../assets/mellyssa.png'
+import ruan from '../../assets/ruan.png'
+import matheus from '../../assets/matheus.png'
 import retang from '../../assets/retangle.png'
 import {ContainerTeam} from './styles';
 import Footer from '../../components/Footer/Footer';
@@ -35,7 +37,7 @@ export default function Team() {
         <img src={retang} className="retang" alt="retangulo"/>
 
         <div className="perfil" > 
-          <a href="https://linkedin.com/"> <img src={lucas} alt="foto-lucas"></img> </a>
+          <a href="https://github.com/pedr0schmidt"> <img src={ruan} alt="foto-ruan"></img> </a>
           <h3>Ruan Pedro</h3>
           <p>Desenvolvedor Back End</p>
         </div>
@@ -43,7 +45,7 @@ export default function Team() {
         <img src={retang} className="retang" alt="retangulo"/>
 
         <div className="perfil" > 
-          <a href="https://linkedin.com/"> <img src={lucas} alt="foto-lucas"></img> </a>
+          <a href="https://instagram.com/matheus.vmh"> <img src={matheus} alt="foto-matheus"></img> </a>
           <h3>Matheus Soares</h3>
           <p>Desenvolvedor Front End</p>
         </div>
